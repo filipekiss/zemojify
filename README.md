@@ -8,6 +8,14 @@ Justyna!
 I came across [this issue] on the original repository and, even though a port to
 ZSH wasn't needed, I thought "why not? :man_shrugging:"
 
+## Advantages over the original script
+
+ZSH, albeit less common, is a shell more powerful than BASH. Since I've ported
+it, I also took time to solve some issues I had with the emojify script, mainly
+the fact that it relied on `$IFS` to make the substitution and ZSH has a nice
+`regex-replace` function that works much better in this case, so issues [like
+this] shouldn't happen.
+
 ## Installation
 
 Just add `zemojify` to your `$PATH` and you're good to go.
@@ -59,3 +67,4 @@ MIT
 [emojify]: https://github.com/mrowa44/emojify
 [justyna rachowicz]: https://github.com/mrowa44
 [this issue]: https://github.com/mrowa44/emojify/issues/32
+[like this]: https://github.com/mrowa44/emojify/issues/24
